@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Activity 10</title>
+        <script src="script.js"></script>
+    </head>
+
+    <body style="margin:0; font-family:Arial, sans-serif; background:#eef5ff; display:flex; justify-content:center; align-items:center; height:100vh;">
+
+        <div style="
+            background:white;
+            padding:40px;
+            border-radius:12px;
+            box-shadow:0 8px 20px rgba(0,0,0,0.1);
+            width:320px;
+            text-align:center;
+        ">
+            <h2 style="color:#1e3a8a; margin-bottom:25px;">
+                Arithmetic Operators
+            </h2>
+
+            <form id="sumForm">
+                <label for="num1" style="color:#1e3a8a; font-weight:bold;">Number 1:</label><br>
+                <input 
+                    type="number" 
+                    id="num1" 
+                    name="num1"
+                    style="
+                        width:90%;
+                        padding:10px;
+                        margin:10px 0 15px 0;
+                        border:1px solid #ccc;
+                        border-radius:6px;
+                        font-size:14px;
+                    "
+                ><br>
+
+                <label for="num2" style="color:#1e3a8a; font-weight:bold;">Number 2:</label><br>
+                <input 
+                    type="number" 
+                    id="num2" 
+                    name="num2"
+                    style="
+                        width:90%;
+                        padding:10px;
+                        margin:10px 0 20px 0;
+                        border:1px solid #ccc;
+                        border-radius:6px;
+                        font-size:14px;
+                    "
+                ><br>
+
+                <button 
+                    type="button" 
+                    onclick="calculate()"
+                    style="
+                        background:#2563eb;
+                        color:white;
+                        border:none;
+                        padding:10px 15px;
+                        border-radius:6px;
+                        cursor:pointer;
+                        margin-right:10px;
+                    "
+                    onmouseover="this.style.background='#1e40af'"
+                    onmouseout="this.style.background='#2563eb'"
+                >
+                    Calculate
+                </button>
+
+                <button 
+                    type="reset" 
+                    onclick="clearFields()"
+                    style="
+                        background:#e5e7eb;
+                        color:#1e3a8a;
+                        border:none;
+                        padding:10px 15px;
+                        border-radius:6px;
+                        cursor:pointer;
+                    "
+                    onmouseover="this.style.background='#cbd5f5'"
+                    onmouseout="this.style.background='#e5e7eb'"
+                >
+                    Clear
+                </button>
+            </form>
+
+            <p id="sum" style="
+                margin-top:20px;
+                font-size:16px;
+                color:#1e3a8a;
+                font-weight:bold;
+                min-height:20px;
+            "></p>
+        </div>
+
+    </body>
+</html>
